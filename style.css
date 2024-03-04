@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: "poppins";
+}
+:root{
+    --main-color:#6CB4EE;
+    --text-color:#002244;
+    -main-color2:#89CFF0;
+    --text-color2:#002244;
+    --body-color:#6F00FF;
+    --body-color2:#B0C4DE;
+    --mindchange-color:#720e9e;
+
+}
+body{
+    background: lightblue;
+}
+
+.main{
+    height: 45.6rem;
+    width:96rem;
+    text-align: center;
+}
+h1{
+    text-align: center;
+    color: var(--text-color);
+}
+.card-box{
+    height: 550px;
+    width: 400px;
+    margin-top:40px  ;
+    border-radius: 20px;
+    transition: .3s ease-in-out;
+    display: inline-block;
+    box-sizing: border-box;
+    background:linear-gradient(35deg,var(--main-color),var(--mindchange-color))
+}
+
+.greeting{
+    font-size: 20px;
+    display: inline-block;
+    text-align: left;
+    margin-left: -235px;
+    color: #fff;
+    margin-top: 20px;
+}
+.search-items{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.searchbar{
+    height: 30px;
+    width: 200px;
+    margin-left: 90px;
+    margin-top: 20px;
+    border-radius: 20px;
+    border: 2px solid var(--mindchange-color);
+    padding:0px 20px;
+    font-size: 15px;
+    color: var(--text-color);
+
+
+}
+.searchbar::placeholder{
+    color: var(--text-color);
+}
+.searchbar:focus{
+    border: 2px solid var(--mindchange-color);
+}
+.icon{
+    font-size: 30px;
+    color: #fff;
+    margin-top: 20px;
+    margin-left: 16px;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+}
+.icon:hover{
+    color: var(--text-color2);
+}
