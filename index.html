@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,29 +10,88 @@
 <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
 <body>
-    
+
     <div class="main">
         <h1>WEATHER APP</h1>
         <div class="card-box ">
 
             <div class="search-items">
 
-                <input type="search"  id="search-text" placeholder="search..." class="searchbar">
+                <input type="search" id="search-text" placeholder="search..." class="searchbar">
                 <i class='bx bx-search icon'></i>
             </div>
 
 
-            <!-- <div class="greeting">Good Morning</div> -->
+            <div class="main-weather-area">
+                <div class="greeting">Good Morning</div>
+                <div class="clouds"><i class='bx bx-cloud cloud-normal'></i></div>
+                <div class="temprature">21°C</div>
+                <div class="climate">THUNDERSTROM</div>
+                <div class="date-time">friday 16 • 09.41am</div>
+
+                <div class="sun-time flex-box">
+                    <div class="sunrise float">
+                        <div class="sun-rise-float"><i class='bx bxs-sun sun-rise-icon'></i></div>
+                        <div class="div-box">
+                            <div class="sun-rise-text">Sunrise</div>
+                            <div class="sun-rise-time">5:34 am</div>
+                        </div>
+                    </div>
+
+
+                    <div class="sunset float">
+                        <div class="sun-set-float"><i class='bx bxs-moon sun-set-icon'></i></div>
+                        <div class="div-box">
+                            <div class="sun-set-text">Sunset</div>
+                            <div class="sun-set-time">6:34 pm</div>
+                        </div>
+                    </div>
+                </div>
+                <hr class="divider">
+
+
+
+
+                <div class="air-humidity flex-box">
+                    <div class="air-quality float">
+                        <div class="div-box">
+                            <div class="air-quality-text">Air Quality</div>
+                            <div class="air-quality-meter">60 <span class="levels">Moderate</span></div>
+                        </div>
+                    </div>
+                    <div class="humidity float">
+                        <div class="div-box">
+                            <div class="humidity-text">Humidty</div>
+                            <div class="humidity-meter">87%</div>
+                        </div>
+                    </div>
+                </div>
+                <hr class="divider">
+
+
+
+
+                <div class="rian-indicator flex-box">
+                    <div class="preciptation float">
+                        <div class="div-box">
+                            <div class="preciptation-text">preciptation</div>
+                            <div class="preciptation-meter">87%</div>
+                        </div>
+                    </div>
+                    <div class="rain float">
+                        <div class="div-box">
+                            <div class="rain-text"> Light Rain</div>
+                            <div class="rain-meter">37%</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
         </div>
-       
-
-
-
-
-
-
     </div>
 
     <script src="script.js"></script>
 </body>
+
 </html>
