@@ -223,7 +223,6 @@ hr.divider {
     font-size: 20px;
     color: #fff;
     font-weight: 700;
-    margin-left: 40px;
 }
 
 .humidity-text {
@@ -306,4 +305,8 @@ hr.divider{
     .searchbar{
         margin-left: 60px;
     }
+}
+#cityname{
+    color: #fff;
+    margin-right: 22px;
 }
