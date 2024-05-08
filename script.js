@@ -52,6 +52,15 @@ search.addEventListener('click', () => {
             document.querySelector('.humidity-meter').innerHTML = value.main.humidity + '%'
             document.querySelector('.air-quality-meter').innerHTML = value.wind.speed + 'm/s'
             document.getElementById('cityname').innerHTML = value.name
+
+            let unixtimestamp = value.sys.sunrise;
+            let mytime = new Date(unixtimestamp * 1000)
+
+
+            let unixtimestamp2 = value.sys.sunset;
+            let mytime2 = new Date(unixtimestamp2 * 1000)
+            document.querySelector(".sun-rise-time").innerHTML = mytime.getHours()+':'+mytime.getMinutes()+'am'
+            document.querySelector(".sun-set-time").innerHTML = mytime2.getHours()-12+':'+mytime2.getMinutes()+'pm'
         }
 
 
